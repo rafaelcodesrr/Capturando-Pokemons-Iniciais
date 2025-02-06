@@ -1,21 +1,15 @@
-function escolherPokemon(numero) {
-    let pokemons = {
-        1: "Bulbasaur",
-        2: "Charmander",
-        4: "Pikachu",
-        5: "Mewtwo"
-    };
-    
-    if (pokemons[numero]) {
-        console.log(`Voce escolheu o ${pokemons[numero]} como seu Pokemon inicial.`);
-    } else {
-        console.log("Escolha inválida. Por favor, selecione um número válido.");
-    }
+// TODO: Implemente as condições necessárias para a solução do desafio. Utilize a tabela de exemplos para identificar a escolha do treinador:
+if ( escolhaDoTreinador === 1) {
+   pokemonEscolhido = "Bulbasaur";
+} else if ( escolhaDoTreinador === 2 ) {
+   pokemonEscolhido = "Charmander";
+} else if ( escolhaDoTreinador === 4) {
+   pokemonEscolhido = "Pikachu";
+} else if(escolhaDoTreinador === 5){
+   pokemonEscolhido = "Mewtwo";
 }
 
-// Exemplos de uso:
-escolherPokemon(1);
-escolherPokemon(2);
-escolherPokemon(4);
-escolherPokemon(5);
-escolherPokemon(3);
+// Imprime o Pokémon escolhido:
+if (pokemonEscolhido) {
+   print("Voce escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.");
+}
